@@ -7,7 +7,15 @@ function agregarAlCarrito() {
     precio: 10.00
   };
 
-  carrito.push(producto);
+  const productoExistente = carrito.find(item => item.nombre === producto.nombre);
+
+  if (productoExistente) {
+    productoExistente.cantidad += 1;
+  } else {
+    producto.cantidad = 1;
+    carrito.push(producto);
+  }
+
   total += producto.precio;
 
   mostrarCarrito();
@@ -15,7 +23,7 @@ function agregarAlCarrito() {
 
 function quitarDelCarrito(index) {
   const producto = carrito[index];
-  total -= producto.precio;
+  total -= producto.precio * producto.cantidad;
   carrito.splice(index, 1);
 
   mostrarCarrito();
@@ -27,7 +35,7 @@ function mostrarCarrito() {
 
   carrito.forEach((producto, index) => {
     const itemCarrito = document.createElement("li");
-    itemCarrito.innerText = `${producto.nombre} - $${producto.precio.toFixed(2)}`;
+    itemCarrito.innerText = `${producto.nombre} x${producto.cantidad} - $${(producto.precio * producto.cantidad).toFixed(2)}`;
     
     const btnQuitar = document.createElement("button");
     btnQuitar.classList.add("btn-agregar", "btn-quitar");
@@ -40,6 +48,5 @@ function mostrarCarrito() {
 
   const totalCarrito = document.getElementById("total-carrito");
   totalCarrito.innerText = "$" + total.toFixed(2);
-
-
 }
+
