@@ -11,7 +11,7 @@ header, nav, section, footer {
 }
 
 /* Estilos específicos */
-nav {
+#nav {
     background-color: rgb(214, 132, 16);
     padding: 10px;
     display: flex;
@@ -59,7 +59,7 @@ nav ul li a:hover {
     background-image: url('fotos/local.jpg');
     background-size: cover;
     background-position: center;
-    padding: 250px 0;
+    padding: 300px 0;
     text-align: center;
     color: #f40404;
 

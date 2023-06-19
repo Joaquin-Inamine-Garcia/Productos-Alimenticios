@@ -1,3 +1,17 @@
+document.querySelectorAll('#nav').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      
+      const target = document.querySelector(this.getAttribute('href'));
+      const offset = 1200; // Ajusta este valor según tus necesidades
+      
+      window.scrollTo({
+        top: target.offsetTop - offset,
+        behavior: 'smooth'
+      });
+    });
+  });
+
 let carrito = [];
 let total = 0;
 
