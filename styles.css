@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
+
 }
 
 header, nav, section, footer {
@@ -13,10 +13,13 @@ header, nav, section, footer {
 /* Estilos específicos */
 nav {
     background-color: rgb(214, 132, 16);
-    padding: 10px; 
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav img {
@@ -56,7 +59,7 @@ nav ul li a:hover {
     background-image: url('fotos/local.jpg');
     background-size: cover;
     background-position: center;
-    padding: 80px 0;
+    padding: 250px 0;
     text-align: center;
     color: #f40404;
 
@@ -92,12 +95,12 @@ nav ul li a:hover {
 }
 
 
-
-section#featured-products {
+/*semillas*/
+section#Semillas {
     text-align: center;
 }
 
-section#featured-products .product {
+section#Semillas .product {
     display: inline-block;
     margin: 10px;
     padding: 10px;
@@ -105,32 +108,109 @@ section#featured-products .product {
     text-align: center;
 }
 
-section#other-products {
+section#product {
     text-align: center;
 }
 
-section#other-products .product {
+section#product .product {
     display: inline-block;
     margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
 }
-  
-  #checkout-button {
+
+#checkout-button {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  #checkout-button:hover {
+}
+
+#checkout-button:hover {
     background-color: #45a049;
-  }
-  
-  
+}
+
+/*liquidos*/
+section#Liquidos {
+    text-align: center;
+}
+
+section#Liquidos .product {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+section#product {
+    text-align: center;
+}
+
+section#product .product {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#checkout-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#checkout-button:hover {
+    background-color: #45a049;
+}
+
+/*Envasados*/
+section#envasados {
+    text-align: center;
+}
+
+section#envasados .product {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+section#product {
+    text-align: center;
+}
+
+section#product .product {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#checkout-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#checkout-button:hover {
+    background-color: #45a049;
+}
+
+
+
 .btn-agregar {
     background-color: #4CAF50;
     color: white;
@@ -143,65 +223,65 @@ section#other-products .product {
     margin: 5px 2px;
     cursor: pointer;
     border-radius: 3px;
-  }
-  
-  .btn-quitar {
+}
+
+.btn-quitar {
     background-color: #f44336;
-  }
-  
-  #carrito {
+}
+
+#carrito {
     margin-top: 30px;
     border-top: 2px solid #ccc;
     padding-top: 20px;
     padding: 20px;
     text-align: center;
-   
-  }
 
-  #carrito h2 {
+}
+
+#carrito h2 {
     text-align: center;
-  }
-  
-  #lista-carrito {
-    list-style:decimal-leading-zero;
+}
+
+#lista-carrito {
+    list-style: decimal-leading-zero;
     padding: 20px;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-  }
-  
-  #lista-carrito li {
+}
+
+#lista-carrito li {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
 
-  }
+}
 
-  #lista-carrito li .btn-quitar {
+#lista-carrito li .btn-quitar {
     margin-left: 10px;
-  }
-  
-  #total-carrito {
+}
+
+#total-carrito {
     font-weight: bold;
     text-align: right;
     margin-top: 10px;
-  }
+}
 
-  #checkout-button {
+#checkout-button {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 40px;
     cursor: pointer;
-  }
-  
-  #checkout-button:hover {
+}
+
+#checkout-button:hover {
     background-color: #45a049;
-  }
+}
 
 
 /* Estilos específicos */
